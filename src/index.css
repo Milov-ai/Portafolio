@@ -57,7 +57,7 @@
 
 .dark {
   --background: oklch(0.2147 0.0058 285.8986);
-  --foreground: oklch(0.9551 0 0);
+  --foreground: oklch(1.0000 0 0);
   --card: oklch(0.2490 0.0056 285.9851);
   --card-foreground: oklch(0.9551 0 0);
   --popover: oklch(0.2490 0.0056 285.9851);
@@ -170,4 +170,19 @@
 
 body {
   letter-spacing: var(--tracking-normal);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--primary);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--primary);
+  }
+}
+
+.glow {
+  animation: glow 1.5s infinite;
 }

@@ -79,7 +79,6 @@ const projects = [
 
 const ProjectsSection = () => {
   const firstRow = useRef<HTMLDivElement>(null);
-  const secondRow = useRef<HTMLDivElement>(null);
 
   const container = useRef<HTMLDivElement>(null);
 
@@ -89,27 +88,16 @@ const ProjectsSection = () => {
 
       mm.add("(min-width: 768px)", () => {
         const projects1 = gsap.utils.toArray<HTMLDivElement>(".project-card-1");
-        const projects2 = gsap.utils.toArray<HTMLDivElement>(".project-card-2");
 
         const timeline = gsap.timeline({ repeat: -1, yoyo: true });
 
-        timeline
-          .to(firstRow.current, {
-            xPercent: -50,
-            duration: 20,
-            ease: "power1.inOut",
-          })
-          .to(
-            secondRow.current,
-            {
-              xPercent: 50,
-              duration: 20,
-              ease: "power1.inOut",
-            },
-            "<",
-          );
+        timeline.to(firstRow.current, {
+          xPercent: -50,
+          duration: 20,
+          ease: "power1.inOut",
+        });
 
-        const allProjects = [...projects1, ...projects2];
+        const allProjects = [...projects1];
 
         allProjects.forEach((project) => {
           const animation = gsap.to(project, {

@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import FloatingProfileCard from "@/core/components/FloatingProfileCard";
 import { useRef } from "react";
 import { Download } from "lucide-react";
 
@@ -37,6 +38,7 @@ const HomePage = () => {
         <div>{/* Logo can go here */}</div>
       </header>
       <main className="flex-1 z-10 overflow-hidden">
+        <FloatingProfileCard />
         <section
           id="hero"
           ref={hero}

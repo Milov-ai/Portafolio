@@ -138,7 +138,7 @@ const ProjectsSection = () => {
           const halfWidth = firstRowEl.scrollWidth / 2;
           timeline.to(firstRow.current, {
             x: -halfWidth,
-            duration: 80,
+            duration: 150,
             ease: "none",
           });
         }

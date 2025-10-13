@@ -132,16 +132,14 @@ const ProjectsSection = () => {
       });
 
       mm.add("(max-width: 767px)", () => {
-        const timeline = gsap.timeline({ repeat: -1, yoyo: true });
+        const timeline = gsap.timeline({ repeat: -1 });
         const firstRowEl = firstRow.current;
         if (firstRowEl) {
-          const rowWidth = firstRowEl.offsetWidth;
-          const rowScrollWidth = firstRowEl.scrollWidth;
-
+          const halfWidth = firstRowEl.scrollWidth / 2;
           timeline.to(firstRow.current, {
-            x: -(rowScrollWidth - rowWidth),
-            duration: 60,
-            ease: "power1.inOut",
+            x: -halfWidth,
+            duration: 80,
+            ease: "none",
           });
         }
       });

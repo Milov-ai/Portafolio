@@ -55,8 +55,8 @@ const FloatingProfileCard = () => {
           ) : (
             <div className="flex items-center space-x-2 md:space-x-4">
               <img
-                src="https://i.pinimg.com/736x/81/16/b6/8116b6432ea7fe1249b1a0a69b8f551d.jpg" // Placeholder image
-                alt="Tu Nombre Real"
+                src="https://media.licdn.com/dms/image/v2/D4E35AQEHMpRedxr1rw/profile-framedphoto-shrink_200_200/B4EZnpDLQxIQAY-/0/1760551548180?e=1761159600&v=beta&t=Uj2D0x1I7TBwowc7RW-WKtnC7TN2sy0_Vh16JHK8axE" // Placeholder image
+                alt="Camilo Jaramillo"
                 className="h-10 w-10 md:h-16 md:w-16 rounded-full border-2 border-primary"
               />
               <div className="flex flex-col">

@@ -26,6 +26,7 @@ import {
   CarouselPrevious,
 } from "@/core/components/ui/Carousel";
 import { ScrollIndicatorComponent } from "@/core/components/ui/ScrollIndicator";
+import { Separator } from "@/core/components/ui/Separator";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -72,7 +73,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </Card>
       </DialogTrigger>
       <DialogContent className="sm:max-w-4xl max-h-[90vh] flex flex-col p-0">
-        <DialogHeader className="p-6 pb-0">
+        <DialogHeader className="p-6 pb-4">
           <DialogTitle>{project.title}</DialogTitle>
           <DialogDescription>{project.description}</DialogDescription>
         </DialogHeader>
@@ -80,44 +81,38 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           ref={scrollAreaRef}
           className="flex-1 overflow-y-auto relative scroll-indicator"
         >
-          <div className="grid md:grid-cols-2 gap-8 p-6">
-            <div className="space-y-4">
-              <h3 className="font-semibold">{t("projects.about")}</h3>
-              <p className="text-sm text-muted-foreground">{project.content}</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="font-semibold">{t("projects.gallery")}</h3>
-              <Carousel
-                className="w-full"
-                opts={{
-                  loop: true,
-                }}
-                plugins={[
-                  Autoplay({
-                    delay: 2000,
-                    stopOnInteraction: true,
-                  }),
-                ]}
-              >
-                <CarouselContent>
-                  {Array.from({ length: 3 }).map((_, index) => (
-                    <CarouselItem key={index}>
-                      <Card>
-                        <CardContent className="flex aspect-video items-center justify-center p-6">
-                          <img
-                            src={`https://placehold.co/600x400?text=Project+Image+${index + 1}`}
-                            alt={`Project image ${index + 1}`}
-                            className="rounded-lg object-cover"
-                          />
-                        </CardContent>
-                      </Card>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
-                <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
-              </Carousel>
-            </div>
+          <Carousel
+            className="w-full"
+            opts={{
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2500,
+                stopOnInteraction: true,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {Array.from({ length: 3 }).map((_, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1">
+                    <img
+                      src={`https://placehold.co/1200x600?text=Project+Image+${index + 1}`}
+                      alt={`Project image ${index + 1}`}
+                      className="rounded-lg object-cover w-full"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+          </Carousel>
+          <div className="p-6 space-y-4">
+            <Separator />
+            <h3 className="font-semibold text-lg">{t("projects.about")}</h3>
+            <p className="text-sm text-muted-foreground">{project.content}</p>
           </div>
         </div>
         <DialogFooter className="p-6 pt-4 mt-auto">

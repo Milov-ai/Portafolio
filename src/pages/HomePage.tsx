@@ -14,7 +14,10 @@ import { Download } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+import { useTranslation } from "react-i18next";
+
 const HomePage = () => {
+  const { t, i18n } = useTranslation();
   const container = useRef(null);
   const hero = useRef(null);
 
@@ -46,10 +49,10 @@ const HomePage = () => {
         >
           <div className="max-w-3xl space-y-4">
             <h1 className="text-5xl font-bold tracking-tighter sm:text-7xl md:text-8xl">
-              Milov AI
+              {t("hero.title")}
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
-              Desarrollador full stack experto en automatizaciones e ia
+              {t("hero.subtitle")}
             </p>
             <div className="flex justify-center gap-4 pt-4">
               <Button
@@ -62,12 +65,16 @@ const HomePage = () => {
                   })
                 }
               >
-                Ver Proyectos
+                {t("hero.viewProjects")}
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="/cv.pdf" download>
+                <a
+                  href={`/CV Camilo Jaramillo 2025 ${i18n.language}.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Download className="mr-2 h-4 w-4" />
-                  CV
+                  {t("hero.downloadCV")}
                 </a>
               </Button>
             </div>

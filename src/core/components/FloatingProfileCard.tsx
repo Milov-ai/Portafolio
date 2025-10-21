@@ -3,8 +3,10 @@ import { Card, CardContent } from "@/core/components/ui/Card";
 import { Skeleton } from "@/core/components/ui/Skeleton";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useTranslation } from "react-i18next";
 
 const FloatingProfileCard = () => {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
   const cardRef = useRef(null);
 
@@ -61,10 +63,10 @@ const FloatingProfileCard = () => {
               />
               <div className="flex flex-col">
                 <h3 className="text-sm md:text-lg font-bold">
-                  Camilo Jaramillo
+                  {t("profile.name")}
                 </h3>
                 <p className="text-xs md:text-sm text-muted-foreground">
-                  "Se permite soñar"
+                  {t("profile.motto")}
                 </p>
               </div>
             </div>

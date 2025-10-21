@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "title": "Milov AI",
+    "subtitle": "Desarrollador full stack experto en automatizaciones e ia",
+    "viewProjects": "Ver Proyectos",
+    "downloadCV": "CV"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "seeMore": "Ver más",
+    "image": "Imagen",
+    "viewCode": "Ver Código",
+    "viewProject": "Ver Proyecto",
+    "list": [
+      {
+        "id": "1",
+        "title": "Arquitecto de Ecosistemas de IA y Automatización 🤖",
+        "description": "Proyectos Personales de IA y Automatización",
+        "content": "Orquesté un ecosistema de 19 agentes de IA, desarrollando procesos de pensamiento complejos y contextos operativos (context engineering) para automatizar campañas de marketing de contenidos de extremo a extremo.",
+        "footer": "Agosto 2025 – Presente",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "2",
+        "title": "Automation & Data Systems Developer (Freelance) 📈",
+        "description": "JHOKER SPORT S.A.S.",
+        "content": "Ingenié un sistema de control de producción escalable en Google Sheets, centralizando procesos manuales mediante funciones clave en Google Apps Script que automatizaron la agregación de datos y la gestión del flujo de trabajo.",
+        "footer": "Agosto 2025 - Agosto 2025",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "3",
+        "title": "Architect & Lead Developer, Generative AI Pipeline 🚀",
+        "description": "Proyecto Personal",
+        "content": "Desplegué una plataforma de automatización auto-alojada 24/7 en Google Cloud Platform, orquestando un entorno dual de contenedores con Docker que redujo los costos operativos en un 90%, de ~$50 a ~$5 mensuales.",
+        "footer": "Junio 2025 - Julio 2025",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "4",
+        "title": "Líder de Proyecto y Desarrollador Full-Stack 👨‍💻",
+        "description": "JHOKER SPORT S.A.S.",
+        "content": "Dirigí el ciclo de vida completo de un proyecto de gestión de inventario, desde el análisis de requisitos hasta el despliegue en producción, entregando una solución robusta y alineada con los objetivos estratégicos del negocio.",
+        "footer": "Abril 2025 - Mayo 2025",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "5",
+        "title": "Arquitecto y Desarrollador Full-Stack 👕",
+        "description": "Fashion Flow (Gestor de Inventario para tiendas de ropa)",
+        "content": "Orquesté el desarrollo de una aplicación web de gestión de inventarios utilizando un stack moderno, entregando una solución escalable que optimiza las operaciones del sector retail.",
+        "footer": "Agosto 2024 – Diciembre 2024",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "6",
+        "title": "Desarrollador de Aplicaciones de Escritorio 💻",
+        "description": "Proyectos Universitarios (C# - Windows Forms)",
+        "content": "Conceptualicé y construí múltiples aplicaciones de escritorio en C# y Windows Forms, demostrando competencia en el diseño de UI y la integración con bases de datos SQL para resolver problemas de negocio.",
+        "footer": "2022-2024",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "7",
+        "title": "Analista de Datos y Machine Learning 📊",
+        "description": "Proyectos de Análisis de Datos (Python)",
+        "content": "Ejecuté análisis de datos en datasets complejos para extraer insights accionables, aplicando librerías especializadas de Python para la manipulación y visualización de datos.",
+        "footer": "2022-2024",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "categories": {
+      "Lenguajes": ["Python", "C#", "TypeScript", "SQL"],
+      "Desarrollo Web y Herramientas": [
+        "Vite",
+        "HeroUI",
+        "Tailwind CSS",
+        "HTML/CSS",
+        "GSAP",
+        "Supabase (BaaS)",
+        "Git",
+        "Docker",
+        "Google Cloud Platform",
+        "PowerShell",
+        "FFmpeg",
+        "n8n"
+      ],
+      "Inteligencia Artificial": [
+        "Desarrollo con IA",
+        "Ingeniería de Prompts",
+        "Context Engineering",
+        "System Instructions",
+        "Diseño de Procesos de Pensamiento",
+        "Gemini",
+        "Imagen 4",
+        "Imagen 3",
+        "Veo 2",
+        "Veo 3",
+        "Nanobanana",
+        "Machine Learning (Scikit-learn)",
+        "Análisis de Datos (Pandas, NumPy)"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Interesado en colaborar? Contáctame.",
+    "email": "Email",
+    "linkedin": "LinkedIn"
+  },
+  "profile": {
+    "name": "Camilo Jaramillo",
+    "motto": "\"Se permite soñar\""
+  }
+}

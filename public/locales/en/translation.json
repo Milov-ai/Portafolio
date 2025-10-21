@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "title": "Milov AI",
+    "subtitle": "Full stack developer expert in automation and AI",
+    "viewProjects": "View Projects",
+    "downloadCV": "CV"
+  },
+  "projects": {
+    "title": "Projects",
+    "seeMore": "See more",
+    "image": "Image",
+    "viewCode": "View Code",
+    "viewProject": "View Project",
+    "list": [
+      {
+        "id": "1",
+        "title": "AI & Automation Ecosystems Architect 🤖",
+        "description": "Personal AI & Automation Projects",
+        "content": "Orchestrated an ecosystem of 19 AI agents, developing complex thought processes and operational contexts (context engineering) to automate end-to-end content marketing campaigns.",
+        "footer": "August 2025 – Present",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "2",
+        "title": "Automation & Data Systems Developer (Freelance) 📈",
+        "description": "JHOKER SPORT S.A.S.",
+        "content": "Engineered a scalable production control system in Google Sheets, centralizing manual processes through key functions in Google Apps Script that automated data aggregation and workflow management.",
+        "footer": "August 2025 - August 2025",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "3",
+        "title": "Architect & Lead Developer, Generative AI Pipeline 🚀",
+        "description": "Personal Project",
+        "content": "Deployed a 24/7 self-hosted automation platform on Google Cloud Platform, orchestrating a dual-container environment with Docker that reduced operational costs by 90%, from ~$50 to ~$5 per month.",
+        "footer": "June 2025 - July 2025",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "4",
+        "title": "Project Lead & Full-Stack Developer 👨‍💻",
+        "description": "JHOKER SPORT S.A.S.",
+        "content": "Led the complete lifecycle of an inventory management project, from requirements analysis to production deployment, delivering a robust solution aligned with strategic business objectives.",
+        "footer": "April 2025 - May 2025",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "5",
+        "title": "Architect & Full-Stack Developer 👕",
+        "description": "Fashion Flow (Inventory Manager for clothing stores)",
+        "content": "Orchestrated the development of a web-based inventory management application using a modern stack, delivering a scalable solution that optimizes retail sector operations.",
+        "footer": "August 2024 – December 2024",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "6",
+        "title": "Desktop Application Developer 💻",
+        "description": "University Projects (C# - Windows Forms)",
+        "content": "Conceptualized and built multiple desktop applications in C# and Windows Forms, demonstrating proficiency in UI design and integration with SQL databases to solve business problems.",
+        "footer": "2022-2024",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      },
+      {
+        "id": "7",
+        "title": "Data and Machine Learning Analyst 📊",
+        "description": "Data Analysis Projects (Python)",
+        "content": "Executed data analysis on complex datasets to extract actionable insights, applying specialized Python libraries for data manipulation and visualization.",
+        "footer": "2022-2024",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "Languages": ["Python", "C#", "TypeScript", "SQL"],
+      "Web Development & Tools": [
+        "Vite",
+        "HeroUI",
+        "Tailwind CSS",
+        "HTML/CSS",
+        "GSAP",
+        "Supabase (BaaS)",
+        "Git",
+        "Docker",
+        "Google Cloud Platform",
+        "PowerShell",
+        "FFmpeg",
+        "n8n"
+      ],
+      "Artificial Intelligence": [
+        "AI Development",
+        "Prompt Engineering",
+        "Context Engineering",
+        "System Instructions",
+        "Thought Process Design",
+        "Gemini",
+        "Imagen 4",
+        "Imagen 3",
+        "Veo 2",
+        "Veo 3",
+        "Nanobanana",
+        "Machine Learning (Scikit-learn)",
+        "Data Analysis (Pandas, NumPy)"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Interested in collaborating? Contact me.",
+    "email": "Email",
+    "linkedin": "LinkedIn"
+  },
+  "profile": {
+    "name": "Camilo Jaramillo",
+    "motto": "\"Dreaming is allowed\""
+  }
+}

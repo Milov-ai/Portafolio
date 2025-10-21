@@ -1,6 +1,7 @@
 import { Home, Code, Wrench, Mail } from "lucide-react";
 import { Button } from "@/core/components/ui/Button";
 import ThemeToggle from "@/core/components/ThemeToggle";
+import { LanguageToggle } from "@/core/components/LanguageToggle";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -96,6 +97,7 @@ const FloatingNav = () => {
             />
           </Button>
           <ThemeToggle />
+          <LanguageToggle />
         </div>
       </div>
     </nav>

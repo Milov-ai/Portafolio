@@ -18,6 +18,7 @@ import {
 import { Skeleton } from "@/core/components/ui/Skeleton";
 import { Button } from "@/core/components/ui/Button";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
   project: {
@@ -32,6 +33,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  const { t } = useTranslation();
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -52,7 +54,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <CardFooter className="flex justify-between items-center">
             <p className="text-xs text-muted-foreground">{project.footer}</p>
             <div className="flex items-center text-xs text-primary">
-              Ver más
+              {t("projects.seeMore")}
               <ArrowRight className="ml-1 h-3 w-3" />
             </div>
           </CardFooter>
@@ -67,15 +69,21 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex flex-col items-center justify-center space-y-2">
               <Skeleton className="h-32 w-full" />
-              <p className="text-sm text-muted-foreground">Imagen 1</p>
+              <p className="text-sm text-muted-foreground">
+                {t("projects.image")} 1
+              </p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
               <Skeleton className="h-32 w-full" />
-              <p className="text-sm text-muted-foreground">Imagen 2</p>
+              <p className="text-sm text-muted-foreground">
+                {t("projects.image")} 2
+              </p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
               <Skeleton className="h-32 w-full" />
-              <p className="text-sm text-muted-foreground">Imagen 3</p>
+              <p className="text-sm text-muted-foreground">
+                {t("projects.image")} 3
+              </p>
             </div>
           </div>
           <div>
@@ -86,13 +94,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <Button asChild variant="outline">
             <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" />
-              Ver Código
+              {t("projects.viewCode")}
             </a>
           </Button>
           <Button asChild>
             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="mr-2 h-4 w-4" />
-              Ver Proyecto
+              {t("projects.viewProject")}
             </a>
           </Button>
         </DialogFooter>

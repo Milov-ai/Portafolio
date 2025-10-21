@@ -31,3 +31,4 @@ dist-ssr
 # Ignore .md files in the root directory, except for README.md
 *.md
 !README.md
+*cv.html

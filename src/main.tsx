@@ -12,10 +12,15 @@ const router = createBrowserRouter([
   },
 ]);
 
+import { Suspense } from "react";
+import "./core/lib/i18n";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <Suspense fallback="...loading">
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </Suspense>
   </StrictMode>,
 );

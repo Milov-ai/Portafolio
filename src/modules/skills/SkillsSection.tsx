@@ -1,79 +1,34 @@
-import SkillBadge from "./components/SkillBadge";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/core/components/ui/Tabs";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { useRef, useState } from "react";
-import { Wrench } from "lucide-react";
 
-const skills = {
-  Lenguajes: ["Python", "C#", "TypeScript", "SQL"],
-  "Desarrollo Web y Herramientas": [
-    "Vite",
-    "HeroUI",
-    "Tailwind CSS",
-    "HTML/CSS",
-    "GSAP",
-    "Supabase (BaaS)",
-    "Git",
-    "Docker",
-    "Google Cloud Platform",
-    "PowerShell",
-    "FFmpeg",
-    "n8n",
-  ],
-  "Inteligencia Artificial": [
-    "Desarrollo con IA",
-    "Ingeniería de Prompts",
-    "Context Engineering",
-    "System Instructions",
-    "Diseño de Procesos de Pensamiento",
-    "Gemini",
-    "Imagen 4",
-    "Imagen 3",
-    "Veo 2",
-    "Veo 3",
-    "Nanobanana",
-    "Machine Learning (Scikit-learn)",
-    "Análisis de Datos (Pandas, NumPy)",
-  ],
-};
+import { Wrench } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import SkillsContent from "./components/SkillsContent";
 
 const SkillsSection = () => {
-  const container = useRef(null);
-  const [activeTab, setActiveTab] = useState("Lenguajes");
-
-  useGSAP(
-    () => {
-      gsap.from(".skill-badge", {
-        opacity: 0,
-        y: 20,
-        duration: 0.3,
-        stagger: 0.1,
-        ease: "power3.out",
-      });
-    },
-    { scope: container, dependencies: [activeTab] },
-  );
+  const { t } = useTranslation();
+  const skillsData = t("skills.categories", { returnObjects: true });
+  const skills =
+    typeof skillsData === "object" && skillsData !== null
+      ? (skillsData as Record<string, string[]>)
+      : {};
 
   return (
     <section
       id="seccion-habilidades"
-      ref={container}
       className="w-full py-12 md:py-24 lg:py-32 flex flex-col items-center text-center"
     >
       <h2 className="container px-4 md:px-6 text-3xl font-bold tracking-tighter sm:text-5xl flex items-center justify-center gap-2">
         <Wrench className="h-8 w-8" />
-        Habilidades
+        {t("skills.title")}
       </h2>
       <Tabs
-        defaultValue="Lenguajes"
+        defaultValue={Object.keys(skills)[0] || ""}
         className="w-full mt-8 max-w-3xl"
-        onValueChange={(value) => setActiveTab(value)}
       >
         <div className="flex justify-center">
           <TabsList>
@@ -86,13 +41,7 @@ const SkillsSection = () => {
         </div>
         {Object.entries(skills).map(([category, skillList]) => (
           <TabsContent key={category} value={category}>
-            <div className="flex flex-wrap justify-center gap-2 mt-4">
-              {skillList.map((skill) => (
-                <div key={skill} className="skill-badge">
-                  <SkillBadge skill={skill} />
-                </div>
-              ))}
-            </div>
+            {Array.isArray(skillList) && <SkillsContent skills={skillList} />}
           </TabsContent>
         ))}
       </Tabs>

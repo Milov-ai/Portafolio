@@ -11,6 +11,8 @@
     "image": "Imagen",
     "viewCode": "Ver Código",
     "viewProject": "Ver Proyecto",
+    "about": "Acerca de este proyecto",
+    "gallery": "Galería",
     "list": [
       {
         "id": "1",

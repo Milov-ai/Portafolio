@@ -186,3 +186,14 @@ body {
 .glow {
   animation: glow 1.5s infinite;
 }
+
+.scroll-indicator::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to top, oklch(var(--background)), transparent);
+  pointer-events: none;
+}

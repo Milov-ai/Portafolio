@@ -11,6 +11,8 @@
     "image": "Image",
     "viewCode": "View Code",
     "viewProject": "View Project",
+    "about": "About this project",
+    "gallery": "Gallery",
     "list": [
       {
         "id": "1",

@@ -15,10 +15,19 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/core/components/ui/Dialog";
-import { Skeleton } from "@/core/components/ui/Skeleton";
 import { Button } from "@/core/components/ui/Button";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/core/components/ui/Carousel";
+import { ScrollIndicatorComponent } from "@/core/components/ui/ScrollIndicator";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 interface ProjectCardProps {
   project: {
@@ -34,6 +43,8 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const { t } = useTranslation();
+  const scrollAreaRef = useRef<HTMLDivElement>(null!);
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -60,37 +71,56 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </CardFooter>
         </Card>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-4xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
+      <DialogContent className="sm:max-w-4xl max-h-[90vh] flex flex-col p-0">
+        <DialogHeader className="p-6 pb-0">
           <DialogTitle>{project.title}</DialogTitle>
           <DialogDescription>{project.description}</DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <Skeleton className="h-32 w-full" />
-              <p className="text-sm text-muted-foreground">
-                {t("projects.image")} 1
-              </p>
+        <div
+          ref={scrollAreaRef}
+          className="flex-1 overflow-y-auto relative scroll-indicator"
+        >
+          <div className="grid md:grid-cols-2 gap-8 p-6">
+            <div className="space-y-4">
+              <h3 className="font-semibold">{t("projects.about")}</h3>
+              <p className="text-sm text-muted-foreground">{project.content}</p>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <Skeleton className="h-32 w-full" />
-              <p className="text-sm text-muted-foreground">
-                {t("projects.image")} 2
-              </p>
+            <div className="space-y-4">
+              <h3 className="font-semibold">{t("projects.gallery")}</h3>
+              <Carousel
+                className="w-full"
+                opts={{
+                  loop: true,
+                }}
+                plugins={[
+                  Autoplay({
+                    delay: 2000,
+                    stopOnInteraction: true,
+                  }),
+                ]}
+              >
+                <CarouselContent>
+                  {Array.from({ length: 3 }).map((_, index) => (
+                    <CarouselItem key={index}>
+                      <Card>
+                        <CardContent className="flex aspect-video items-center justify-center p-6">
+                          <img
+                            src={`https://placehold.co/600x400?text=Project+Image+${index + 1}`}
+                            alt={`Project image ${index + 1}`}
+                            className="rounded-lg object-cover"
+                          />
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+              </Carousel>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <Skeleton className="h-32 w-full" />
-              <p className="text-sm text-muted-foreground">
-                {t("projects.image")} 3
-              </p>
-            </div>
-          </div>
-          <div>
-            <p>{project.content}</p>
           </div>
         </div>
-        <DialogFooter>
+        <DialogFooter className="p-6 pt-4 mt-auto">
           <Button asChild variant="outline">
             <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" />
@@ -104,6 +134,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </a>
           </Button>
         </DialogFooter>
+        <ScrollIndicatorComponent targetRef={scrollAreaRef} />
       </DialogContent>
     </Dialog>
   );

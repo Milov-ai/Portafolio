@@ -15,13 +15,28 @@
     "gallery": "Gallery",
     "list": [
       {
+        "id": "sexylove",
+        "title": "SexyLove - Intimacy & Connection App 💘",
+        "description": "Personal Project (Mobile First)",
+        "content": "A premium, mobile-first application designed to enhance intimacy and connection for couples. Features a 'To-Do' style facade for privacy, a hidden secure dashboard, and interactive tools like 'Fantasy Manager' and 'Dice Game'. Built with a focus on high-end aesthetics, glassmorphism, and smooth animations.",
+        "footer": "November 2025 - Present",
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "images": [
+          "/images/projects/sexylove/mobile.png",
+          "/images/projects/sexylove/desktop.png"
+        ],
+        "tags": ["React", "TypeScript", "Tailwind CSS", "GSAP"]
+      },
+      {
         "id": "1",
         "title": "AI & Automation Ecosystems Architect 🤖",
         "description": "Personal AI & Automation Projects",
         "content": "Orchestrated an ecosystem of 19 AI agents, developing complex thought processes and operational contexts (context engineering) to automate end-to-end content marketing campaigns.",
         "footer": "August 2025 – Present",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["AI Agents", "Python", "Automation", "LLMs"]
       },
       {
         "id": "2",
@@ -30,7 +45,8 @@
         "content": "Engineered a scalable production control system in Google Sheets, centralizing manual processes through key functions in Google Apps Script that automated data aggregation and workflow management.",
         "footer": "August 2025 - August 2025",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Google Apps Script", "Data Analysis", "Automation"]
       },
       {
         "id": "3",
@@ -39,7 +55,8 @@
         "content": "Deployed a 24/7 self-hosted automation platform on Google Cloud Platform, orchestrating a dual-container environment with Docker that reduced operational costs by 90%, from ~$50 to ~$5 per month.",
         "footer": "June 2025 - July 2025",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Docker", "GCP", "Python", "DevOps"]
       },
       {
         "id": "4",
@@ -48,7 +65,8 @@
         "content": "Led the complete lifecycle of an inventory management project, from requirements analysis to production deployment, delivering a robust solution aligned with strategic business objectives.",
         "footer": "April 2025 - May 2025",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Full Stack", "React", "Node.js", "SQL"]
       },
       {
         "id": "5",
@@ -57,7 +75,8 @@
         "content": "Orchestrated the development of a web-based inventory management application using a modern stack, delivering a scalable solution that optimizes retail sector operations.",
         "footer": "August 2024 – December 2024",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["React", "TypeScript", "Supabase", "Tailwind"]
       },
       {
         "id": "6",
@@ -66,7 +85,8 @@
         "content": "Conceptualized and built multiple desktop applications in C# and Windows Forms, demonstrating proficiency in UI design and integration with SQL databases to solve business problems.",
         "footer": "2022-2024",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["C#", ".NET", "SQL Server", "Windows Forms"]
       },
       {
         "id": "7",
@@ -75,7 +95,8 @@
         "content": "Executed data analysis on complex datasets to extract actionable insights, applying specialized Python libraries for data manipulation and visualization.",
         "footer": "2022-2024",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Python", "Pandas", "Scikit-learn", "Data Viz"]
       }
     ]
   },

@@ -15,67 +15,88 @@
     "gallery": "Galería",
     "list": [
       {
+        "id": "sexylove",
+        "title": "SexyLove - App de Intimidad y Conexión 💘",
+        "description": "Proyecto Personal (Mobile First)",
+        "content": "Una aplicación premium, mobile-first diseñada para mejorar la intimidad y conexión en parejas. Cuenta con una fachada estilo 'To-Do' para privacidad, un panel seguro oculto y herramientas interactivas como 'Gestor de Fantasías' y 'Juego de Dados'. Construida con un enfoque en estética de alta gama, glassmorphism y animaciones fluidas.",
+        "footer": "Noviembre 2025 - Presente",
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "images": [
+          "/images/projects/sexylove/mobile.png",
+          "/images/projects/sexylove/desktop.png"
+        ],
+        "tags": ["React", "TypeScript", "Tailwind CSS", "GSAP"]
+      },
+      {
         "id": "1",
         "title": "Arquitecto de Ecosistemas de IA y Automatización 🤖",
         "description": "Proyectos Personales de IA y Automatización",
-        "content": "Orquesté un ecosistema de 19 agentes de IA, desarrollando procesos de pensamiento complejos y contextos operativos (context engineering) para automatizar campañas de marketing de contenidos de extremo a extremo.",
+        "content": "Orquesté un ecosistema de 19 agentes de IA, desarrollando procesos de pensamiento complejos y contextos operativos (ingeniería de contexto) para automatizar campañas de marketing de contenido de extremo a extremo.",
         "footer": "Agosto 2025 – Presente",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Agentes IA", "Python", "Automatización", "LLMs"]
       },
       {
         "id": "2",
-        "title": "Automation & Data Systems Developer (Freelance) 📈",
+        "title": "Desarrollador de Sistemas de Automatización y Datos (Freelance) 📈",
         "description": "JHOKER SPORT S.A.S.",
-        "content": "Ingenié un sistema de control de producción escalable en Google Sheets, centralizando procesos manuales mediante funciones clave en Google Apps Script que automatizaron la agregación de datos y la gestión del flujo de trabajo.",
+        "content": "Diseñé un sistema de control de producción escalable en Google Sheets, centralizando procesos manuales a través de funciones clave en Google Apps Script que automatizaron la agregación de datos y la gestión del flujo de trabajo.",
         "footer": "Agosto 2025 - Agosto 2025",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Google Apps Script", "Análisis de Datos", "Automatización"]
       },
       {
         "id": "3",
-        "title": "Architect & Lead Developer, Generative AI Pipeline 🚀",
+        "title": "Arquitecto y Desarrollador Líder, Pipeline de IA Generativa 🚀",
         "description": "Proyecto Personal",
-        "content": "Desplegué una plataforma de automatización auto-alojada 24/7 en Google Cloud Platform, orquestando un entorno dual de contenedores con Docker que redujo los costos operativos en un 90%, de ~$50 a ~$5 mensuales.",
+        "content": "Desplegué una plataforma de automatización autohospedada 24/7 en Google Cloud Platform, orquestando un entorno de doble contenedor con Docker que redujo los costos operativos en un 90%, de ~$50 a ~$5 por mes.",
         "footer": "Junio 2025 - Julio 2025",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Docker", "GCP", "Python", "DevOps"]
       },
       {
         "id": "4",
         "title": "Líder de Proyecto y Desarrollador Full-Stack 👨‍💻",
         "description": "JHOKER SPORT S.A.S.",
-        "content": "Dirigí el ciclo de vida completo de un proyecto de gestión de inventario, desde el análisis de requisitos hasta el despliegue en producción, entregando una solución robusta y alineada con los objetivos estratégicos del negocio.",
+        "content": "Lideré el ciclo de vida completo de un proyecto de gestión de inventario, desde el análisis de requisitos hasta el despliegue en producción, entregando una solución robusta alineada con los objetivos estratégicos del negocio.",
         "footer": "Abril 2025 - Mayo 2025",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Full Stack", "React", "Node.js", "SQL"]
       },
       {
         "id": "5",
         "title": "Arquitecto y Desarrollador Full-Stack 👕",
         "description": "Fashion Flow (Gestor de Inventario para tiendas de ropa)",
-        "content": "Orquesté el desarrollo de una aplicación web de gestión de inventarios utilizando un stack moderno, entregando una solución escalable que optimiza las operaciones del sector retail.",
+        "content": "Orquesté el desarrollo de una aplicación de gestión de inventario basada en web utilizando un stack moderno, entregando una solución escalable que optimiza las operaciones del sector minorista.",
         "footer": "Agosto 2024 – Diciembre 2024",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["React", "TypeScript", "Supabase", "Tailwind"]
       },
       {
         "id": "6",
         "title": "Desarrollador de Aplicaciones de Escritorio 💻",
         "description": "Proyectos Universitarios (C# - Windows Forms)",
-        "content": "Conceptualicé y construí múltiples aplicaciones de escritorio en C# y Windows Forms, demostrando competencia en el diseño de UI y la integración con bases de datos SQL para resolver problemas de negocio.",
+        "content": "Conceptualicé y construí múltiples aplicaciones de escritorio en C# y Windows Forms, demostrando competencia en diseño de UI e integración con bases de datos SQL para resolver problemas de negocio.",
         "footer": "2022-2024",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["C#", ".NET", "SQL Server", "Windows Forms"]
       },
       {
         "id": "7",
         "title": "Analista de Datos y Machine Learning 📊",
         "description": "Proyectos de Análisis de Datos (Python)",
-        "content": "Ejecuté análisis de datos en datasets complejos para extraer insights accionables, aplicando librerías especializadas de Python para la manipulación y visualización de datos.",
+        "content": "Ejecuté análisis de datos en conjuntos de datos complejos para extraer ideas accionables, aplicando bibliotecas especializadas de Python para manipulación y visualización de datos.",
         "footer": "2022-2024",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "#",
+        "tags": ["Python", "Pandas", "Scikit-learn", "Visualización"]
       }
     ]
   },

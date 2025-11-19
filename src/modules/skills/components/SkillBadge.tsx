@@ -5,7 +5,11 @@ interface SkillBadgeProps {
 }
 
 const SkillBadge = ({ skill }: SkillBadgeProps) => {
-  return <Badge>{skill}</Badge>;
+  return (
+    <Badge variant="outline" className="text-sm py-1 px-3">
+      {skill}
+    </Badge>
+  );
 };
 
 export default SkillBadge;

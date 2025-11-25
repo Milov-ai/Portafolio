@@ -15,6 +15,16 @@
     "gallery": "Gallery",
     "list": [
       {
+        "id": "project-estimation-ai",
+        "title": "Project Estimation AI - Intelligent Platform 🧠",
+        "description": "Probabilistic Project Estimation & Resource Optimization",
+        "content": "A cutting-edge platform solving the 'Flaw of Averages' in project management. Features Monte Carlo Simulations for probabilistic outcomes (P85, P95) and Artificial Bee Colony (ABC) algorithms for optimal resource allocation within the JDL Data Fusion Framework.",
+        "footer": "November 2025 - Present",
+        "liveUrl": "https://project-estimation-ai-self.vercel.app/",
+        "codeUrl": "#",
+        "tags": ["React", "TypeScript", "Zustand", "Recharts", "Web Workers", "ABC Algorithm"]
+      },
+      {
         "id": "sexylove",
         "title": "SexyLove - Intimacy & Connection App 💘",
         "description": "Personal Project (Mobile First)",

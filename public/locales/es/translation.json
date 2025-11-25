@@ -15,134 +15,109 @@
     "gallery": "Galería",
     "list": [
       {
-        "id": "project-estimation-ai",
-        "title": "Project Estimation AI - Plataforma Inteligente 🧠",
-        "description": "Estimación Probabilística de Proyectos y Optimización de Recursos",
-        "content": "Una plataforma de vanguardia que resuelve el 'Fallo de los Promedios' en la gestión de proyectos. Cuenta con simulaciones de Monte Carlo para resultados probabilísticos (P85, P95) y algoritmos de Colonia de Abejas Artificiales (ABC) para la asignación óptima de recursos dentro del marco JDL Data Fusion.",
-        "footer": "Noviembre 2025 - Presente",
-        "liveUrl": "https://project-estimation-ai-self.vercel.app/",
-        "codeUrl": "#",
-        "tags": ["React", "TypeScript", "Zustand", "Recharts", "Web Workers", "Algoritmo ABC"]
-      },
-      {
         "id": "sexylove",
-        "title": "SexyLove - App de Intimidad y Conexión 💘",
-        "description": "Proyecto Personal (Mobile First)",
-        "content": "Una aplicación premium, mobile-first diseñada para mejorar la intimidad y conexión en parejas. Cuenta con una fachada estilo 'To-Do' para privacidad, un panel seguro oculto y herramientas interactivas como 'Gestor de Fantasías' y 'Juego de Dados'. Construida con un enfoque en estética de alta gama, glassmorphism y animaciones fluidas.",
-        "footer": "Noviembre 2025 - Presente",
+        "title": "Social Connect PWA (Proyecto Personal)",
+        "description": "Full Stack Developer",
+        "content": "Arquitectado y desarrollado una aplicación progresiva (PWA) utilizando React 19, Vite y Tailwind CSS 4, desplegando la solución en entornos Web y Android mediante Capacitor. Ingeniado un módulo de seguridad ('The Vault') implementando encriptación AES del lado del cliente con crypto-js para proteger la privacidad de datos sensibles. Implementado una arquitectura de sincronización 'Local-First' con gestión de colas y resolución de conflictos, asegurando integridad de datos offline. Integrado Supabase para gestión de autenticación, almacenamiento de medios y PostgreSQL, optimizando la persistencia de sesiones.",
+        "footer": "Octubre 2025 – Presente",
         "liveUrl": "#",
         "codeUrl": "#",
         "images": [
           "/images/projects/sexylove/mobile.png",
           "/images/projects/sexylove/desktop.png"
         ],
-        "tags": ["React", "TypeScript", "Tailwind CSS", "GSAP"]
+        "tags": ["React 19", "Vite", "Tailwind CSS 4", "Capacitor", "Supabase"]
       },
       {
-        "id": "1",
-        "title": "Arquitecto de Ecosistemas de IA y Automatización 🤖",
-        "description": "Proyectos Personales de IA y Automatización",
-        "content": "Orquesté un ecosistema de 19 agentes de IA, desarrollando procesos de pensamiento complejos y contextos operativos (ingeniería de contexto) para automatizar campañas de marketing de contenido de extremo a extremo.",
+        "id": "ai-ecosystems",
+        "title": "Ecosistemas de IA y Automatización",
+        "description": "Arquitecto de Agentes de IA",
+        "content": "Orquesté un ecosistema de 19 agentes de IA, desarrollando procesos de pensamiento (Chain of Thought) para automatizar campañas de marketing de contenidos. Diseñé una cadena de procesamiento de 5 agentes que transforma datos no estructurados en currículums HTML optimizados, garantizando ejecución autónoma. Forjé un agente generativo monolítico (Gemini) que sintetiza 4 guiones de video y arquetipos vocales en una sola ejecución. Establecí un esquema JSON canónico para el intercambio de datos entre agentes, asegurando integración sin fricciones.",
         "footer": "Agosto 2025 – Presente",
         "liveUrl": "#",
         "codeUrl": "#",
-        "tags": ["Agentes IA", "Python", "Automatización", "LLMs"]
+        "tags": ["Agentes IA", "Chain of Thought", "Gemini", "Automatización"]
       },
       {
-        "id": "2",
-        "title": "Desarrollador de Sistemas de Automatización y Datos (Freelance) 📈",
-        "description": "JHOKER SPORT S.A.S.",
-        "content": "Diseñé un sistema de control de producción escalable en Google Sheets, centralizando procesos manuales a través de funciones clave en Google Apps Script que automatizaron la agregación de datos y la gestión del flujo de trabajo.",
-        "footer": "Agosto 2025 - Agosto 2025",
-        "liveUrl": "#",
+        "id": "milov-ai",
+        "title": "Milov AI",
+        "description": "Arquitecto Frontend",
+        "content": "Arquitecté un sistema de componentes modular y reutilizable basado en shadcn/ui y TypeScript asegurando escalabilidad. Implementé animaciones avanzadas integrando GSAP para elevar la interactividad y atractivo visual. Integré internacionalización completa (i18n) permitiendo cambio dinámico de idioma para alcance global.",
+        "footer": "2025 – Presente",
+        "liveUrl": "https://milov-ai.vercel.app/",
         "codeUrl": "#",
-        "tags": ["Google Apps Script", "Análisis de Datos", "Automatización"]
+        "tags": ["shadcn/ui", "TypeScript", "GSAP", "i18n"]
       },
       {
-        "id": "3",
-        "title": "Arquitecto y Desarrollador Líder, Pipeline de IA Generativa 🚀",
-        "description": "Proyecto Personal",
-        "content": "Desplegué una plataforma de automatización autohospedada 24/7 en Google Cloud Platform, orquestando un entorno de doble contenedor con Docker que redujo los costos operativos en un 90%, de ~$50 a ~$5 por mes.",
-        "footer": "Junio 2025 - Julio 2025",
+        "id": "gcp-pipeline",
+        "title": "Generative AI Pipeline (GCP)",
+        "description": "Arquitecto Cloud & Backend",
+        "content": "Desplegué una plataforma de automatización auto-alojada en Google Cloud Platform, orquestando un entorno Docker dual que redujo costos operativos en un 90% (de $50 a $5/mes). Arquitecté un pipeline de video end-to-end, implementando procesamiento paralelo y utilizando Google Transcoder API. Eliminé fallos de renderizado en FFMPEG diseñando un protocolo de normalización de timestamps estricto.",
+        "footer": "Junio 2025 – Julio 2025",
         "liveUrl": "#",
         "codeUrl": "#",
-        "tags": ["Docker", "GCP", "Python", "DevOps"]
+        "tags": ["GCP", "Docker", "FFMPEG", "Google Transcoder API"]
       },
       {
-        "id": "4",
-        "title": "Líder de Proyecto y Desarrollador Full-Stack 👨‍💻",
-        "description": "JHOKER SPORT S.A.S.",
-        "content": "Lideré el ciclo de vida completo de un proyecto de gestión de inventario, desde el análisis de requisitos hasta el despliegue en producción, entregando una solución robusta alineada con los objetivos estratégicos del negocio.",
-        "footer": "Abril 2025 - Mayo 2025",
+        "id": "notiplay",
+        "title": "Notiplay",
+        "description": "Full Stack Developer (React & Supabase)",
+        "content": "Arquitectada SPA de noticias utilizando el stack moderno de React, Vite y Tailwind CSS. Implementado ecosistema backend con Supabase, orquestando autenticación OAuth, PostgreSQL y seguridad RLS. Ingeniado sistema de gamificación robusto con trivias contextuales, Leaderboards animados y mercado de recompensas.",
+        "footer": "Agosto 2025 – Noviembre 2025",
         "liveUrl": "#",
         "codeUrl": "#",
-        "tags": ["Full Stack", "React", "Node.js", "SQL"]
+        "tags": ["React", "Supabase", "RLS", "Gamification"]
       },
       {
-        "id": "5",
-        "title": "Arquitecto y Desarrollador Full-Stack 👕",
-        "description": "Fashion Flow (Gestor de Inventario para tiendas de ropa)",
-        "content": "Orquesté el desarrollo de una aplicación de gestión de inventario basada en web utilizando un stack moderno, entregando una solución escalable que optimiza las operaciones del sector minorista.",
-        "footer": "Agosto 2024 – Diciembre 2024",
+        "id": "linguaflow",
+        "title": "LinguaFlow",
+        "description": "Desarrollador Full Stack de IA",
+        "content": "Diseñó aplicación web de traducción utilizando React y Node.js (Fastify) con arquitectura desacoplada. Integró Google Gemini 2.5 Flash mediante Vercel AI SDK para detección y traducción simultánea a tres idiomas. Implementó validación estricta de esquemas con Zod en backend para garantizar integridad de datos.",
+        "footer": "Septiembre 2025",
         "liveUrl": "#",
         "codeUrl": "#",
-        "tags": ["React", "TypeScript", "Supabase", "Tailwind"]
+        "tags": ["React", "Fastify", "Gemini 2.5", "Zod"]
       },
       {
-        "id": "6",
-        "title": "Desarrollador de Aplicaciones de Escritorio 💻",
-        "description": "Proyectos Universitarios (C# - Windows Forms)",
-        "content": "Conceptualicé y construí múltiples aplicaciones de escritorio en C# y Windows Forms, demostrando competencia en diseño de UI e integración con bases de datos SQL para resolver problemas de negocio.",
-        "footer": "2022-2024",
+        "id": "project-estimation",
+        "title": "Project Estimation AI (Académico)",
+        "description": "Autor y Desarrollador",
+        "content": "Implementada simulación de Monte Carlo con 20,000 iteraciones usando Web Workers en arquitectura React/TypeScript. Diseñado algoritmo de Colonia de Abejas Artificiales (ABC) para optimización de recursos.",
+        "footer": "Noviembre 2025",
         "liveUrl": "#",
         "codeUrl": "#",
-        "tags": ["C#", ".NET", "SQL Server", "Windows Forms"]
+        "tags": ["Monte Carlo", "Web Workers", "React", "TypeScript"]
       },
       {
-        "id": "7",
-        "title": "Analista de Datos y Machine Learning 📊",
-        "description": "Proyectos de Análisis de Datos (Python)",
-        "content": "Ejecuté análisis de datos en conjuntos de datos complejos para extraer ideas accionables, aplicando bibliotecas especializadas de Python para manipulación y visualización de datos.",
-        "footer": "2022-2024",
+        "id": "jhoker-automation",
+        "title": "JHOKER SPORT S.A.S.",
+        "description": "Automation & Data Systems Developer (Freelance)",
+        "content": "Ingenié un sistema de control de producción escalable en Google Sheets, centralizando procesos manuales mediante funciones clave en Google Apps Script que automatizaron la agregación de datos y la gestión del flujo de trabajo. Automaticé la creación de módulos de órdenes de producción, reduciendo el tiempo de configuración drásticamente al generar dinámicamente Google Forms y Sheets vinculados. Diseñé 3 dashboards de BI automatizados utilizando funciones avanzadas de QUERY y ARRAYFORMULA, proporcionando seguimiento en tiempo real de la eficiencia del operador y el rendimiento del módulo.",
+        "footer": "Agosto 2025",
         "liveUrl": "#",
         "codeUrl": "#",
-        "tags": ["Python", "Pandas", "Scikit-learn", "Visualización"]
+        "tags": ["Google Sheets", "Apps Script", "BI Dashboards"]
+      },
+      {
+        "id": "jhoker-fullstack",
+        "title": "JHOKER SPORT S.A.S.",
+        "description": "Líder de Proyecto y Desarrollador Full-Stack (Freelance)",
+        "content": "Dirigí el ciclo de vida completo de un proyecto de gestión de inventario, desde el análisis de requisitos hasta el despliegue en producción, entregando una solución robusta y alineada con los objetivos estratégicos. Arquitecté una solución full-stack con una base de datos centralizada y seguridad robusta (JWT y RLS), estableciendo un sistema de identificación por códigos EAN-13 como única fuente de verdad. Implementé un sistema de registro de inventario dual (manual y por escaneo) que minimizó los errores de despacho y optimizó significativamente los tiempos de búsqueda.",
+        "footer": "Abril 2025 – Mayo 2025",
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "tags": ["Full Stack", "JWT", "RLS", "Inventory System"]
       }
     ]
   },
   "skills": {
     "title": "Habilidades",
     "categories": {
-      "Lenguajes": ["Python", "C#", "TypeScript", "SQL"],
-      "Desarrollo Web y Herramientas": [
-        "Vite",
-        "HeroUI",
-        "Tailwind CSS",
-        "HTML/CSS",
-        "GSAP",
-        "Supabase (BaaS)",
-        "Git",
-        "Docker",
-        "Google Cloud Platform",
-        "PowerShell",
-        "FFmpeg",
-        "n8n"
-      ],
-      "Inteligencia Artificial": [
-        "Desarrollo con IA",
-        "Ingeniería de Prompts",
-        "Context Engineering",
-        "System Instructions",
-        "Diseño de Procesos de Pensamiento",
-        "Gemini",
-        "Imagen 4",
-        "Imagen 3",
-        "Veo 2",
-        "Veo 3",
-        "Nanobanana",
-        "Machine Learning (Scikit-learn)",
-        "Análisis de Datos (Pandas, NumPy)"
-      ]
+      "AI Engineering": ["Vercel AI SDK", "Prompt Engineering", "Context Engineering", "System Instructions", "Gemini (2.5 Flash, 1.5 Pro)", "Imagen", "Veo"],
+      "Web Development": ["React 19", "Node.js", "Vite", "Tailwind CSS 4", "Fastify", "Supabase (BaaS)", "TanStack Query", "Zod", "shadcn/ui", "GSAP"],
+      "Data & Cloud": ["Machine Learning (Scikit-learn)", "JDL Data Fusion", "Monte Carlo", "Docker", "Google Cloud Platform", "Git"],
+      "Programming Languages": ["JavaScript", "TypeScript", "Python", "C#", "SQL"],
+      "Languages": ["Español (Nativo)", "Inglés (B1)"]
     }
   },
   "contact": {
